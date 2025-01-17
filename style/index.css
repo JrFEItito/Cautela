@@ -1,0 +1,131 @@
+#cabecalho{
+    background-color: #324360;
+}
+#logo-1{
+ margin-left: -100%;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex
+    ;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 12%;
+        font-size: 1.2vw;
+        color: white;
+    font-family: Aresenal, Regular;
+}
+#inicio {
+    background-image: url(../imagens/background-inicio.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 36%;
+    padding-bottom: 152%;
+    margin-top: -1%;
+}
+
+#inicio ul{
+    padding-top: 14%;
+    margin-left: -43%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#inicio h5{
+    color: #76A6AD;
+    font-family: Arsenal, Regular;
+    font-size: 1vw;
+    margin-bottom: 9%;
+    margin-left: -66%;
+    margin-top: 55%;
+}
+
+
+#inicio h2{
+    font-size: 2.5vw;
+    margin-left: 18%;
+    width: 100%;
+}
+
+#inicio h3{
+    font-size: 2.5vw;
+    margin-left: -13%;
+}
+
+#inicio strong{
+    color: #77A6AD;
+    font-weight: normal;
+}
+
+#inicio h6{
+    font-size: 1.2vw;
+    margin-left: -2%;
+    margin-top: 7%;
+}
+
+#vocesabia {
+    background-color: #FFFFFF;
+    background-size: 100% 66%;
+    margin-top: -75%;
+    margin-left: -75%;
+}
+
+#vocesabia ul{
+    display: flex;
+    flex-direction: column;
+    font-family: Arsenal,Regular;
+}
+
+#vocesabia h6{
+    color: #18D4C9;
+    font-size: 1vw;
+}
+
+#vocesabia h3{
+    color: #3A4D6A;
+    font-size: 1.7vw;
+    margin-left: 33%;
+    width: 112%;
+    margin-top: 7%;
+}
+
+#vocesabia h2{
+    color: #3A4D6A;
+    font-size: 1.7vw;
+    margin-left: 35%;
+    width: 111%;
+}
+
+#vocesabia p{
+    font-size: 1vw;
+    width: 42%;
+    margin-left: 46%;
+    margin-top: 1%;
+}
+
+#vocesabia h5{
+    color: #FFFFFF;
+    padding: 4% 28%;
+    width: 109%;
+    border-radius: 5px;
+    background-color: #18D4C9;
+    margin-top: 52%;
+    margin-left: -22%;
+}
+
+.hexagonos{
+    background-image: url(../imagens/hexagonos-vocesabia.jpeg);
+    background-repeat: no-repeat;
+}
