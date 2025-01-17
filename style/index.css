@@ -1,3 +1,5 @@
+/* PARTE TON */
+
 #cabecalho{
     background-color: #324360;
 }
@@ -129,3 +131,121 @@ ul{
     background-image: url(../imagens/hexagonos-vocesabia.jpeg);
     background-repeat: no-repeat;
 }
+
+
+
+
+
+/* PARTE IGOR */
+
+*{
+    font-family: Arsenal, serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sec-servicos{
+    background-color: #F7F8FA;
+}
+
+h2{
+    color: #3A4D6A;
+    font-size: 2.5vw;
+}
+.linha{
+    border-top: 5px solid #76A6AD;
+    border-radius: 10px;
+    width: 20%;
+    margin: 1% 0;
+}
+
+h4{
+    color: #3A4D6A;
+    font-size: 1vw;
+}
+
+.titilo-servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servicos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.servicos-div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.8%;
+    margin-top: 1%;
+}
+
+#servico-principal{
+    width: 85%;
+    border: 1px solid rgba(0, 0, 0, 10%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.servico{
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 10%);;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1%;
+    height: 310px;
+}
+
+.servico h5, #servico-principal h5{
+    color: #394E69;
+    font-size: 1.5vw;
+}
+
+.servico p, #servico-principal p{
+    color: #3A4D6A;
+    font-size: 1vw;
+}
+
+#saiba-mais{
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    background-color: #76A6AD;
+    border: 1px solid #76A6AD;
+    border-radius: 10px;
+    padding: 1%;
+    width: 180%;
+    margin-top: 50%;
+    margin-bottom: 30%;
+    transition: 0.2s;
+}
+
+#saiba-mais:hover{
+    background-color: #394E69;
+    font-weight: bold;
+}
+

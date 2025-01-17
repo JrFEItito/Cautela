@@ -40,6 +40,53 @@
             <!-- Nossos Servivos -->
             <section>
 
+                <div>
+                    <h2>NOSSOS SERVIÇOS</h2>
+
+                    <!-- Traço -->
+                    <div>
+
+                    </div>
+
+                    <h3>Confira de quais maneiras podemos assegurar o seu negócio!</h3>
+                </div>
+
+                <div>
+
+                    <div>
+
+                        <div id="servico-principal">
+
+                        </div>
+
+                        <div class="servico">
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="servico">
+
+                        </div>
+
+                        <div class="servico">
+
+                        </div>
+
+                        <div class="servico">
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <button>Saiba Mais</button>
+                    </div>
+
+                </div>
+
+
             </section>
 
             <!-- Nossa Atuacao -->
