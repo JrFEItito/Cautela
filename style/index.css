@@ -87,7 +87,7 @@ ul{
     background-color: #f7f7f7;
     background-size: 100% 66%;
     margin-top: -117%;
-    margin-left: -35%;
+    margin-left: -56%;
 }
 
 #vocesabia ul{
@@ -116,11 +116,12 @@ ul{
     width: 111%;
 }
 
-#vocesabia p{
+#vocesabia strong{
     font-size: 1vw;
+    display: block;
     width: 42%;
     margin-left: 46%;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 
 #vocesabia h5{
@@ -151,40 +152,92 @@ ul{
 .hexagonos{
     background-image: url(../imagens/hexagonos-vocesabia.jpeg);
     background-repeat: no-repeat;
-    margin-left: 93%;
-    margin-top: -22%;
+    margin-left: 63%;
+    margin-top: -10%;
     margin-bottom: 0%;
     background-size: 111% 102%;
-    width: 20%;
+    width: 15%;
     padding: 11%;
 }
 
 .primeiro-hexagono{
     margin-left: -100%;
-    margin-top: 10%;
+    margin-top: 4%;
+}
+#p-1{
+    margin-left: 33%;
+    margin-top: 2%;
+    font-size: 1.3vw;
+    width: 22%;
+    text-align: center;
 }
 
-#p-1{
+#h-1{
+    margin-top: 1%;
+    margin-left: 31%;
+    font-size: 1.7vw;
+    color: #394E69;
+}
 
+
+.primeiro-hexagono img{
+    margin-left: 39.5%;
+    width: 8%;
+    margin-top: -12%;
 }
 
 .segundo-hexagono{
     margin-left: 75%;
-    margin-top: -4%;
+    margin-top: -44%;
 }
 
 #p-2{
+    margin-left: 76%;
+    font-size: 1.3vw;
+    width: 175%;
+    text-align: center;
+    margin-top: 22%;
+}
 
+
+#h-2{
+    margin-top: 9%;
+    margin-left: 75%;
+    font-size: 1.7vw;
+    color: #394E69;
+}
+
+.segundo-hexagono img{
+    margin-left: 129%;
+    margin-top: -76%;
+    width: 60%;
 }
 
 
 .terceiro-hexagono{
     margin-left: -29%;
-    margin-top: 25%;
+    margin-top: 33%;
+}
+
+.terceiro-hexagono img{
+    width: 12%;
+    margin-left: 49%;
+    margin-top: 1%;
 }
 
 #p-3{
+    font-size: 1.3vw;
+    margin-top: 3%;
+    margin-left: 19%;
+    width: 69%;
+    text-align: center;
+}
 
+#h-3{
+    margin-top: 2%;
+    font-size: 1.7vw;
+    margin-left: 33%;
+    color: #394E69;
 }
 
 #Paulo{
@@ -256,6 +309,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 12%;
 }
 
 #sec-servicos{
