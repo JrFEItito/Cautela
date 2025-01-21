@@ -663,10 +663,11 @@ main{
 #img-contato{
     width: 42%;
     position: absolute;
-    top: 525%;
+    top: 658%;
     left: 57%;
     z-index: 999;
 }
+
 
 .conteudo-rodape{
     display: flex;
