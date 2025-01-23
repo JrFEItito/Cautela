@@ -1,0 +1,33 @@
+*{font-family: Arsenal;}
+body{
+    background-color: #25385A;
+   overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+#fundo{
+    background-image: url(../../imagens/Retângulo\ 53.png);
+    background-repeat: no-repeat;
+    padding-bottom: 2%;
+    margin-top: -2%;
+    width: 100%;
+}
+
+
+#logo_cautela img{
+    margin-top: 2%;
+    margin-left: 8%;
+    width: 39%;
+}
+
+
+#login{
+    background-color: #25385A;
+    display: inline-block;
+    margin-left: 65%;
+    padding-top: 39%;
+    padding-bottom: 22%;
+    width: 28%;
+    margin-top: -48%;
+    margin-left: 52%;
+}
