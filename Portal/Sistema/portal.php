@@ -1,6 +1,5 @@
 <?php 
-    include('protect.php');
-
+  include('../Login/protect.php');
 
 ?>
 <!DOCTYPE html>
