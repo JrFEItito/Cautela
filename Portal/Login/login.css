@@ -31,3 +31,56 @@ body{
     margin-top: -48%;
     margin-left: 52%;
 }
+
+#login label{
+    color: #FFFFFF;
+    font-size: 1.25vw;
+    font-family: 'Arsenal';
+    margin-left: 10%;
+    margin-bottom: 7%;
+}
+
+.formulario{
+    display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 29%;
+        left: 57%;
+}
+
+#id_email{    
+    background-color: #25385A;
+    border-radius: 6px;
+    border-style: solid;
+    padding: 6%;
+    border-color: #76A6AD;
+    width: 187%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+    color: white;  
+}
+
+#id_senha{
+    background-color: #25385A;
+    border-radius: 6px;
+    border-style: solid;
+    padding: 6%;
+    border-color: #76A6AD;
+    width: 188%;
+    margin-left: 10%;
+    color: white;
+    margin-bottom: 6%;
+}
+
+#id_submit{
+    width: 204%;
+    margin-left: 10%;
+    background-color: #18D4C9;
+    border-radius: 6px;
+    padding: 6%;
+    color: white;
+    font-family: 'Arsenal';
+    border-style: none;
+    font-family: Arsenal;
+    cursor: pointer;
+}
