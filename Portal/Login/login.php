@@ -1,4 +1,5 @@
 <?php
+global $mysqli;
 include('conexao.php');
 
 if (isset($_POST['email']) && isset($_POST['senha'])) {
@@ -10,7 +11,9 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+        $sql_code = "SELECT * FROM usuarios 
+                     WHERE email = '$email' AND senha = '$senha'";
+
         $sql_query = $mysqli->query($sql_code) or die("Falha na execucao do código SQL: " . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
@@ -44,20 +47,20 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     <title>Portal Cautela</title>
 </head>
 <body>
+
+
     <div id="fundo">
     <div id="logo_cautela">
         <img src="../../imagens/Logo completo 1-Escuro.png" alt="Logo Cautela">
     </div>
     
     <div id="login">
-     <form action="../Sistema/portal.php" method="post" class="formulario">
+     <form action="login.php" method="post" class="formulario">
                 <label for="login">Login</label>
-                    <input type="email" placeholder="E-mail" name="email" require id="id_email">
-                    <input type="password" placeholder="Senha" name="senha" require id="id_senha" >
+                    <input type="email" placeholder="E-mail" name="email" required id="id_email">
+                    <input type="password" placeholder="Senha" name="senha" required id="id_senha" >
                     <input type="submit" placeholder="Entrar" id="id_submit">
             </form>
-
-
     </div> 
     
     </div>
