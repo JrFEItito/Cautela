@@ -47,6 +47,8 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     <title>Portal Cautela</title>
 </head>
 <body>
+
+
     <div id="fundo">
     <div id="logo_cautela">
         <img src="../../imagens/Logo completo 1-Escuro.png" alt="Logo Cautela">
@@ -55,12 +57,10 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     <div id="login">
      <form action="login.php" method="post" class="formulario">
                 <label for="login">Login</label>
-                    <input type="email" placeholder="E-mail" name="email" require id="id_email">
-                    <input type="password" placeholder="Senha" name="senha" require id="id_senha" >
+                    <input type="email" placeholder="E-mail" name="email" required id="id_email">
+                    <input type="password" placeholder="Senha" name="senha" required id="id_senha" >
                     <input type="submit" placeholder="Entrar" id="id_submit">
             </form>
-
-
     </div> 
     
     </div>
