@@ -2,6 +2,9 @@
 
 body{
     background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 #cabecalho{
@@ -711,7 +714,7 @@ main{
 #img-contato{
     width: 42%;
     position: absolute;
-    top: 617%;
+    top: 498%;
     left: 57%;
     z-index: 999;
 }
