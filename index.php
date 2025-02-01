@@ -299,48 +299,26 @@
     <section id="sec-contato">
         <!-- INICIA APÓS NOTICIAS -->
         <div class="form">
-            <form>
+            <form action="mail.php" method="post">
                 <div id="conteudo-contato">
-                    <h1>
-                        CONSULTORIA GRÁTIS
-                    </h1>
-
-                    <h2>
-                        Entre em contato e receba <br>um orçamento!
-                    </h2>
+                    <h1>CONSULTORIA GRÁTIS</h1>
+                    <h2>Entre em contato e receba <br>um orçamento!</h2>
                 </div>
 
                 <div>
+                    <input class="info-input" id="nome" name="nome" placeholder="Nome *" required>
+                    <input class="info-input" type="email" id="email" name="email" placeholder="E-mail *" required>
+                    <input class="info-input" type="tel" id="telefone" name="telefone" placeholder="Telefone *" required>
+                </div>
 
-                    <form action="mail.php" method="post">
-                        <div>
-                            <label>
-                                <input class="info-input" name="nome" placeholder="Nome *" required>
-                            </label>
+                <div>
+                    <input id="mais-detalhes" type="text" name="detalhes" placeholder="Mais Detalhes (Opcional)">
+                </div>
 
-                            <label>
-                                <input class="info-input" type="email" name="email" placeholder="E-mail *" required>
-                            </label>
+                <img id="img-contato" src="imagens/Grupo%20111.png" alt="">
 
-                            <label>
-                                <input class="info-input" type="tel" name="telefone" placeholder="Telefone *" required>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label>
-                                <input id="mais-detalhes" type="text" name="detalhes" placeholder="Mais Detalhes (Opcional)">
-                            </label>
-                        </div>
-
-                        <img id="img-contato" src="imagens/Grupo%20111.png" alt="">
-
-                        <div>
-                            <input id="enviar" type="submit" value="Enviar">
-                        </div>
-                    </form>
-
-                    <?php if (!empty($mensagem)) { echo "<p>$mensagem</p>"; } ?>
+                <div>
+                    <input id="enviar" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
