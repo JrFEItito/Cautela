@@ -1,0 +1,582 @@
+*{
+    font-family: Aresenal, serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 300vh;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 93%;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#form-menu{
+    background-color: #25385A;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.btn {
+    width: 100%;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    height: 100%;
+    background-color: #25385A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+.menu button:hover {
+    background: #555;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    gap: 40%;
+    margin-left: 8%;
+    margin-top: -80%;
+}
+
+.titles h1{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #18D4C9;
+    width: 100%;
+}
+
+.titles h2{
+    font-size: 3vw;
+    font-weight: bold;
+    color: #25385A;
+    width: 100%;
+}
+
+/* Estilização do hexágono */
+.hex-button {
+    width: 80px;
+    height: 95px;
+    background-color: #26D6CD;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Efeito de hover */
+.hex-button:hover {
+    background-color: #1cb5b0;
+}
+
+/* Imagem dentro do hexágono */
+.hex-button img {
+    width: 50%;
+    height: auto;
+}
+
+
+#noticias-atuais{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#noticias-atuais h3{
+    color: #25385A;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: -4%;
+}
+
+.noticias{
+    gap: 2%;
+}
+
+.noticias-atuais {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-left: 15%;
+    width: 70%; /* Definindo largura fixa para o container */
+    overflow: hidden; /* Evita o transbordamento do conteúdo */
+}
+
+#carrossel-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.noticia {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 450px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    scroll-snap-align: start;
+}
+
+.noticia:hover {
+    transform: scale(1.05);
+}
+
+.img-noticia {
+    width: 100%;
+    height: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo-noticia {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.noticia p {
+    color: #3A4D6A;
+    font-size: 1vw;
+    line-height: 1.4;
+    width: 90%;
+    text-align: justify;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.noticia h5 {
+    width: 100%;
+    font-size: 1.5vw;
+    color: #394E6A;
+    font-weight: bold;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    text-align: justify;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.data-noticia {
+    font-size: 1vw;
+    color: #7D8B8C;
+    margin-bottom: 15px;
+}
+
+.editar-btn {
+    width: 35px;
+    height: 40px;
+    background-color: #26D6CD;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    text-decoration: none; /* Remove o sublinhado */
+    left: 91%;
+    top: 2vw;
+}
+
+/* Efeito de hover */
+.editar-btn:hover {
+    background-color: #1cb5b0;
+}
+
+/* Imagem dentro do hexágono */
+.editar-btn img {
+    width: 50%;
+    height: auto;
+}
+
+
+.btn-noticia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    padding: 1%;
+    margin-top: auto;
+}
+
+.btn-noticia p {
+    font-size: 1.2vw;
+    color: #4C9FCF;
+    font-weight: bold;
+}
+
+.btn-noticia img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.carrossel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carrossel::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.carrossel::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.hexagono-noticia {
+    width: 33px; /* Reduzindo a largura do hexágono */
+    height: 14px; /* Ajustando a altura para ser proporcional */
+    background-color: #76A6AD;
+    position: relative;
+    margin-right: 10px; /* Adicionando um pequeno espaço entre o hexágono e o texto */
+}
+
+.hexagono-noticia::before,
+.hexagono-noticia::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent; /* Ajustando as bordas dos triângulos */
+    border-right: 16px solid transparent;
+}
+
+.hexagono-noticia::before {
+    top: -7px; /* Ajustando a posição para alinhar corretamente */
+    border-bottom: 7px solid #76A6AD;
+}
+
+.hexagono-noticia::after {
+    bottom: -7px; /* Ajustando a posição para alinhar corretamente */
+    border-top: 7px solid #76A6AD;
+}
+
+/* Centralizar o símbolo '>' */
+.hexagono-symbol {
+    position: absolute;
+    top: -2px;
+    left: 54%;
+    transform: translateX(-50%); /* Centraliza o símbolo horizontalmente */
+    font-size: 18px;
+    color: white;
+}
+
+.btn-sbs, .a-noticia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+#add-noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 62%;
+}
+
+#form-add-noticia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#form-add-noticia label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#primeira-label, #segunda-label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3A4D6A;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-submit {
+    width: 104%;
+    padding: 12px;
+    background-color: #1cb5b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #3A4D6A;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2vw;
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: #394D6A;
+}
+
+#edit-noticia{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#form-edit{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+#btn-confirm-editar{
+    width: 107%;
+    padding: 12px;
+    background-color: #1cb5b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1vw;
+}
+
+#btn-confirm-editar:hover{
+    background-color: #394D6A;
+    font-weight: bold;
+}
+
+#btn-excluir {
+    width: 107%;
+    padding: 10px 20px;
+    border: 2px solid red;  /* Cor da borda vermelha */
+    background-color: white;  /* Fundo branco */
+    color: red;  /* Cor do texto vermelha */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;  /* Deixar o texto em maiúsculas */
+    cursor: pointer;
+    border-radius: 5px;  /* Borda arredondada */
+    transition: 0.3s;
+    outline: none;
+    margin-top: 5%;
+}
+
+#btn-excluir:hover {
+    background-color: red;  /* Fundo vermelho ao passar o mouse */
+    color: white;  /* Texto branco ao passar o mouse */
+}
+
+#btn-excluir:active {
+    background-color: #cc0000;  /* Fundo mais escuro quando pressionado */
+    border-color: #b30000;  /* Cor da borda mais escura */
+}
+
+#editar-noticia{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#ferramente-noticias{
+    margin-left: 7%;
+}
+
+#troca-grafico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#troca-grafico img{
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Estilos gerais do formulário */
+#form-grafico {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando o campo de entrada de arquivo */
+#form-grafico input[type="file"] {
+    display: none; /* Oculta o campo de upload */
+}
+
+#form-grafico label {
+    background-color: #394D6A;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo do botão de envio */
+#form-grafico button {
+    background-color: #1cb5b0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeitos de hover no botão de envio */
+#form-grafico button:hover {
+    background-color: #1cb5b0;
+    transform: translateY(-2px);
+}
+
+/* Efeito de hover no label */
+#form-grafico label:hover {
+    background-color: #394D6A;
+    transform: translateY(-2px);
+}
+
+/* Estilo para mostrar o nome do arquivo */
+#form-grafico input[type="file"]:focus + label {
+    background-color: #28a745;
+}
+
+#form-grafico input[type="file"]:valid + label {
+    background-color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #form-grafico {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #form-grafico button, #form-grafico label {
+        width: 100%;
+    }
+}

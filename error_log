@@ -1,0 +1,29 @@
+[31-Jan-2025 20:48:53 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home1/jrfei570/public_html/areato/Cautela/index.php:9
+Stack trace:
+#0 /home1/jrfei570/public_html/areato/Cautela/index.php(9): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'login')
+#1 {main}
+  thrown in /home1/jrfei570/public_html/areato/Cautela/index.php on line 9
+[31-Jan-2025 20:49:03 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home1/jrfei570/public_html/areato/Cautela/index.php:9
+Stack trace:
+#0 /home1/jrfei570/public_html/areato/Cautela/index.php(9): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'login')
+#1 {main}
+  thrown in /home1/jrfei570/public_html/areato/Cautela/index.php on line 9
+[31-Jan-2025 21:01:36 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home1/jrfei570/public_html/areato/Cautela/index.php:9
+Stack trace:
+#0 /home1/jrfei570/public_html/areato/Cautela/index.php(9): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'login')
+#1 {main}
+  thrown in /home1/jrfei570/public_html/areato/Cautela/index.php on line 9
+[31-Jan-2025 21:01:37 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home1/jrfei570/public_html/areato/Cautela/index.php:9
+Stack trace:
+#0 /home1/jrfei570/public_html/areato/Cautela/index.php(9): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'login')
+#1 {main}
+  thrown in /home1/jrfei570/public_html/areato/Cautela/index.php on line 9
+[31-Jan-2025 21:02:51 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home1/jrfei570/public_html/areato/Cautela/index.php:9
+Stack trace:
+#0 /home1/jrfei570/public_html/areato/Cautela/index.php(9): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'login')
+#1 {main}
+  thrown in /home1/jrfei570/public_html/areato/Cautela/index.php on line 9
+[31-Jan-2025 21:12:33 America/Fortaleza] PHP Warning:  Undefined array key "nome" in /home1/jrfei570/public_html/areato/Cautela/mail.php on line 4
+[31-Jan-2025 21:12:33 America/Fortaleza] PHP Warning:  Undefined array key "email" in /home1/jrfei570/public_html/areato/Cautela/mail.php on line 5
+[31-Jan-2025 21:12:33 America/Fortaleza] PHP Warning:  Undefined array key "telefone" in /home1/jrfei570/public_html/areato/Cautela/mail.php on line 6
+[31-Jan-2025 21:12:33 America/Fortaleza] PHP Warning:  Undefined array key "detalhes" in /home1/jrfei570/public_html/areato/Cautela/mail.php on line 7

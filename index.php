@@ -1,114 +1,395 @@
+<?php
+
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
+    // Configuração do banco de dados
+    $host = "localhost";
+    $user = "root";
+    $password = "";
+    $dbname = "login";
+
+    // Conexão com o banco
+    $conn = new mysqli($host, $user, $password, $dbname);
+
+    // Verificar conexão
+    if ($conn->connect_error) {
+        die("Erro na conexão: " . $conn->connect_error);
+    }
+
+    // Buscar notícias
+    $sql = "SELECT * FROM noticias ORDER BY data DESC";
+    $result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cautela</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cautela</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="style/index.css">
-    </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400&display=swap" rel="stylesheet">
+</head>
 
 
-    <body>
-        <header>
+<body>
+<header>
 
-            <!-- CABECALHO -->
+    <!-- CABECALHO -->
+    <section id="cabecalho">
+        <nav>
+            <ul>
+                <li><img src="imagens/Ativo 4.png" alt="" id="logo-1"></li>
+                <div class="nav-items">
+                    <li>Home</li>
+                    <li>Serviços</li>
+                    <li>Trajetória</li>
+                    <li>Notícias</li>
+                    <li>Contato</li>
+                    <li>*países</li>
+                </div>
+            </ul>
+        </nav>
+        <hr>
+    </section>
 
-        </header>
+</header>
 
-        <main>
+<main>
 
-            <!-- SITE -->
+    <!-- SITE -->
 
-            <!-- inicio -->
-            <section>
+    <!-- inicio -->
+    <section id="inicio">
+        <ul>
+            <li><h5>CTLA SEGURO CORPORATIVO</h5></li>
+            <li><h2>O NOSSO NEGÓCIO É MANTER O <strong>SEU</strong></h2></li>
+            <li><h3><strong>NEGÓCIO</strong> SEGURO</h3></li>
+            <li><h6>Há 25 anos trabalhando apenas com seguro corporativo</h6></li>
+        </ul>
+    </section>
 
-            </section>
+    <!-- Voce Sabia Que -->
+    <section id="vocesabia">
+        <ul>
+            <li><h6>VOCÊ SABIA QUE</h6></li>
+            <li><h3>CERCA DE 80% DAS APÓLICES</h3></li>
+            <li><h2>EMPRESARIAS POSSUEM ERROS?</h2></li>
+            <li><p><strong>A CTLA é uma corretora de seguros 100% especializada em riscos empresariais e, por isso, temos profundo conhecimento nas cláusulas que impactam as coberturas empresariais dos contratos das seguradoras.    <br><br>  Cerca de 80% das apólices empresarias que recebemos na CTLA, feitas por outros corretores, apresentam erros técnicos que causariam redução significativa ou até negativa de indenização.</p></strong></li>
+            <li><a href=""><h5>Saiba Mais</h5></a></li>
+        </ul>
 
-            <!-- Voce Sabia Que -->
-            <section>
+        <div class="hexagonos">
 
-            </section>
+            <img src="imagens/hexagonos.png" alt="" id="img-hexagonos">
 
-            <!-- Paulo Ferreira -->
-            <section>
+            <div id="primeiro-hexagono" >
+                <img src="imagens/icone 1.png" alt="Icone casa">
+                <h4 id="h-1">INFORMAÇÕES</h4>
+                <p id="p-1">Os valores e a atividade informados são fundamentais para a validade do seguro.</p>
+            </div>
 
-            </section>
+            <div id="segundo-hexagono" >
+                <img src="imagens/icone 2.png" alt="Icone casa">
+                <h4 id="h-2">COERÊNCIA</h4>
+                <p id="p-2">As coberturas acessórias têm que coerentes em relação à atividade e características da empresa.</p>
+            </div>
 
-            <!-- Nossos Servivos -->
-            <section>
+            <div id="terceiro-hexagono">
+                <img src="imagens/icone 3.png" alt="Icone casa">
+                <h4 id="h-3">CONFIRMAÇÃO</h4>
+                <p id="p-3">As seguradoras NÃO confirmam informações para emitir a apólice, apenas quando acontece o sinistro.</p>
+            </div>
 
-                <div>
-                    <h2>NOSSOS SERVIÇOS</h2>
+            <img src="imagens/meio circulo.png" alt="" id="meio-circulo">
+        </div>
 
-                    <!-- Traço -->
+    </section>
+
+    <!-- Paulo Ferreira -->
+    <section id="Paulo">
+        <ul class="lista-paulo">
+            <div class="linha2"></div>
+            <li>
+                <h1>PAULO FERREIRA</h1>
+            </li>
+            <li>
+                <h2>Head of Placement</h2>
+            </li>
+            <li><p>Depois de 25 anos atuando em grandes multinacionais de consumo, produtos químicos e inteligência corporativa, Paulo atuou como líder em um Broker de Resseguros Internacionais e depois assumiu a CTLA, já somando quase 15 anos de experiência na área de seguros patrimoniais corporativos de médio e grande portes. <br><br>Além de possuir certificações em Seguro e Resseguro, Paulo é graduado em Comunicação Social e em Administração de Empresas com MBA em Marketing e Mestrado em Gerenciamento e Estratégia Corporativa pela UTS, na Austrália.</p></li>
+        </ul>
+
+        <img src="imagens/Imagem Paulo Ferreira.jpeg" alt="Paulo Ferreira" id="imagem-paulo">
+
+        <ol class="lista-icones">
+            <li><a href=""><img src="imagens/Icone Linkedin Azul.png" alt=""></a></li>
+            <li><a href=""><img src="imagens/Icone Facebook Azul.png" alt=""></a></li>
+        </ol>
+
+    </section>
+
+    <!-- Nossos Servivos -->
+
+
+    <section id="sec-servicos">
+        <div class="titilo-servicos">
+            <h2>NOSSOS SERVIÇOS</h2>
+
+            <!-- Traço -->
+            <div class="linha">
+
+            </div>
+
+
+            <h4>Confira de quais maneiras podemos assegurar o seu negócio!</h4>
+        </div>
+
+        <div class="servicos">
+
+            <div class="servicos-div">
+
+                <div id="servico-principal">
                     <div>
+                        <div class="hexagon">
+                            <img src="imagens/Grupo%20128.png" alt="">
+                        </div>
 
+                        <h5>POPERTY</h5>
                     </div>
 
-                    <h3>Confira de quais maneiras podemos assegurar o seu negócio!</h3>
+                    <div>
+                        <p>Nossa principal especialidade é em seguro de propriedades comerciais e industriais, com proteção principal contra incêndio e coberturas adicionais específicas</p>
+
+                        <ul class="lista-principal">
+                            <li>Compreensivo Empresarial</li>
+                            <li>Riscos Nomeados</li>
+                            <li>Riscos Operacionais</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="servico">
+                    <div class="hexagon">
+                        <img src="imagens/Grupo%20130.png" alt="">
+                    </div>
+
+                    <h5>D&O/E&O</h5>
+
+                    <p>Protege sua empresa e seus executivos de reclamações judiciais</p>
+                </div>
+
+            </div>
+
+            <div class="servicos-div">
+                <div class="servico">
+                    <div class="hexagon">
+                        <img src="imagens/Grupo%20130.png" alt="">
+                    </div>
+
+                    <h5>GARANTIA JUDICIAL</h5>
+
+                    <p>Protege o caixa da sua empresa, evitando o uso de recursos próprios em depósitos recursais</p>
+                </div>
+
+                <div class="servico">
+                    <div class="hexagon">
+                        <img src="imagens/Grupo%20129.png" alt="">
+                    </div>
+
+                    <h5>FROTAS E TRANSPORTES</h5>
+
+                    <p>Protege os veículos da sua frota, ou sua carga, de acidentes e roubos durante as viagens.</p>
+                </div>
+
+                <div class="servico">
+                    <div class="hexagon">
+                        <img src="imagens/Grupo%20130.png" alt="">
+                    </div>
+
+                    <h5>GARANTIA COMERCIAL</h5>
+
+                    <p>Viabiliza a participação da sua empresa em contratos comerciais que exigem este tipo de seguro</p>
+                </div>
+            </div>
+
+            <div>
+                <button id="saiba-mais">Saiba Mais</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Imagem Mundo -->
+    <div class="img-mundo">
+        <img src="imagens/Grupo%2068.png" alt="">
+        <img src="imagens/Grupo%2069.png" alt="">
+    </div>
+
+    <section id="sinistros">
+
+        <img id="img-deco-sinistro1" src="imagens/Grupo%20142.png">
+
+        <div id="div-sinistro">
+            <h2 id="h2-sinistro">
+                SINISTROS EM PATRIMÔNIO EMPRESARIAL OCORRIDOS NO BRASIL NOS ÚLTIMOS 12 MESES
+            </h2>
+
+            <?php
+            // Lê o caminho da imagem salva ou usa a imagem padrão
+            $imagem_atual = file_exists("imagem_atual.txt") ? file_get_contents("imagem_atual.txt") : "Portal/Sistema/imagen/grafico.png";
+            ?>
+            <img id="img-sinistro" src="<?php echo $imagem_atual; ?>" alt="Gráfico atualizado">
+
+        </div>
+
+        <img id="img-deco-sinistro2" src="imagens/Grupo%20148.png">
+
+    </section>
+
+    <!-- Noticias -->
+    <section id="sec-noticias">
+
+        <div id="texto-noticias">
+
+            <div class="linha2"></div>
+
+            <h2>Lorem Ipsum</h2>
+
+            <p>
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut lacus euismod, efficitur massa et, congue massa.
+            </p>
+
+        </div>
+
+        <div class="noticias">
+            <?php
+            // Defina o diretório base onde as imagens estão armazenadas
+            $diretorioImagens = 'Portal/Sistema/uploads/';
+
+            // Verifica se há notícias no banco de dados
+            if ($result->num_rows > 0) {
+                // Loop para exibir as notícias
+                while ($row = $result->fetch_assoc()) {
+                    ?>
+                    <div class="noticia">
+                        <div class="img-noticia">
+                            <!-- Exibe a imagem se existir -->
+                            <?php if (!empty($row['imagem'])) { ?>
+                                <img src="<?php echo $diretorioImagens . $row['imagem']; ?>" alt="Imagem da notícia">
+                            <?php } ?>
+                        </div>
+                        <div class="conteudo-noticia">
+                            <p class="data-noticia">
+                                <!-- Exibe a data formatada -->
+                                <?php echo date("d M Y", strtotime($row['data'])); ?>
+                            </p>
+                            <h5><?php echo htmlspecialchars($row['titulo']); ?></h5>
+                            <p><?php echo nl2br(htmlspecialchars($row['conteudo'])); ?></p>
+
+                            <!-- Adiciona o link se existir -->
+                            <?php if (!empty($row['link'])) {
+                                // Garante que o link tem http ou https, senão adiciona
+                                $link = htmlspecialchars($row['link']);
+                                if (!preg_match("~^(?:f|ht)tps?://~i", $link)) {
+                                    $link = "https://" . $link;
+                                }
+                                ?>
+                                <p>
+                                    <a class="a-noticia" href="<?php echo $link; ?>" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-sbs">
+                                            <div class="hexagono-noticia">
+                                                <div class="hexagono-symbol">></div> <!-- Simbolo '>' centralizado -->
+                                            </div>
+                                            <div>Saiba Mais</div>
+                                        </div>
+                                    </a>
+                                </p>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <?php
+                }
+            } else {
+                echo "<p>Nenhuma notícia encontrada.</p>";
+            }
+            ?>
+        </div>
+    </section>
+
+    <!-- Entre em Contato -->
+    <section id="sec-contato">
+        <!-- INICIA APÓS NOTICIAS -->
+        <div class="form">
+            <form action="mail.php" method="post">
+                <div id="conteudo-contato">
+                    <h1>CONSULTORIA GRÁTIS</h1>
+                    <h2>Entre em contato e receba <br>um orçamento!</h2>
                 </div>
 
                 <div>
-
-                    <div>
-
-                        <div id="servico-principal">
-
-                        </div>
-
-                        <div class="servico">
-
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <div class="servico">
-
-                        </div>
-
-                        <div class="servico">
-
-                        </div>
-
-                        <div class="servico">
-
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <button>Saiba Mais</button>
-                    </div>
-
+                    <input class="info-input" id="nome" name="nome" placeholder="Nome *" required>
+                    <input class="info-input" type="email" id="email" name="email" placeholder="E-mail *" required>
+                    <input class="info-input" type="tel" id="telefone" name="telefone" placeholder="Telefone *" required>
                 </div>
 
+                <div>
+                    <input id="mais-detalhes" type="text" name="detalhes" placeholder="Mais Detalhes (Opcional)">
+                </div>
 
-            </section>
+                <img id="img-contato" src="imagens/Grupo%20111.png" alt="">
 
-            <!-- Nossa Atuacao -->
-            <section>
+                <div>
+                    <input id="enviar" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
 
-            </section>
+        <div class="conteudo-rodape">
+            <img src="imagens/Ativo%204.png" alt="">
 
-            <!-- Noticias -->
-            <section>
+            <p id="texto-rodape">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut lacus euismod, efficitur massa et, congue massa.
+            </p>
 
-            </section>
+            <div class="redes-sociais">
+                <a>
+                    <img src="imagens/Icon%20awesome-linkedin.png" alt="">
+                </a>
 
-        </main>
+                <a>
+                    <img src="imagens/Icon%20awesome-facebook-square.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
 
-        <footer>
-            <!-- RODAPÉ -->
-            <!-- INICIA APÓS NOTICIAS -->
+<footer>
+
+    <div class="cont-footer">
+        <!-- RODAPÉ -->
+        <p>
+            &copy; <?php echo date("Y"); ?> All Rights Reserved.
+        </p>
+
+        <img src="imagens/Layer_1.png" alt="">
+
+        <p>
+            Desenvolvido por Júnior FEI
+        </p>
+    </div>
 
 
-        </footer>
-    </body>
+</footer>
+</body>
 
-    <script type="text/javascript" src="script/index.js"></script>
+<script type="text/javascript" src="script/index.js"></script>
 
 </html>
